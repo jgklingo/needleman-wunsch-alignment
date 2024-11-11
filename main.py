@@ -22,16 +22,13 @@ def _content_or_string(could_be_path):
         return could_be_path
 
 
-# if __name__ == '__main__':
-#     parser = ArgumentParser()
-#     parser.add_argument('seq1_file', help='Path to file containing sequence 1')
-#     parser.add_argument('seq2_file', help='Path to file containing sequence 2')
-#     args = parser.parse_args()
+if __name__ == '__main__':
+    parser = ArgumentParser()
+    parser.add_argument('seq1_file', help='Path to file containing sequence 1')
+    parser.add_argument('seq2_file', help='Path to file containing sequence 2')
+    args = parser.parse_args()
 
-#     seq1 = _content_or_string(args.seq1_file)
-#     seq2 = _content_or_string(args.seq2_file)
+    seq1 = _content_or_string(args.seq1_file)
+    seq2 = _content_or_string(args.seq2_file)
 
-#     main(seq1, seq2)
-
-
-main('GGGGTTTTAAAACCCCTTTT', 'TTTTAAAACCCCTTTTGGGG')
+    main(seq1, seq2)
